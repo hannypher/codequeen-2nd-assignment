@@ -1,19 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CodeQueen - Restuarant</title>
-    <link rel="stylesheet" href="css/index.css"/>
+    <link rel="stylesheet" href="./index.css"/>
 </head>
 <body>
     <header>
         <h1>CODE QUEEN RESTUARANT</h1>
         <nav class="navbar-top">
             <ul class="menu">
-                <li class="menu-item">
-                    <a href="#" id="logo">Code Queen</a>
+                <a href="./index.html" id="logo">Code Queen</a>
+                <!--  <li class="menu-item">
+                    <a href="" id="logo">Code Queen</a>
+                </li> -->
                 </li>
                 <li class="menu-item">
                     <a href="./about.html">About</a>
@@ -25,9 +28,9 @@
         </nav>
     </header>
     <div class="container">
-        <img src="./images/breakfast.jpg" alt="Plate of food on table" height="100%" width="100%">
+        <img class="banner" src="./images/breakfast.jpg" alt="Plate of food on table" />
         <div class="feedback-form">
-            <h4>Please leave your feedback below.</h4>
+            <h3 class="form-header">Please leave your feedback below.</h3>
             <form id="review-form" method="POST" action="./index.html">
                 <div class="input-element">
                     <label for="full_name">Full Name:</label>
@@ -36,24 +39,28 @@
 
                     <div input="input-element">
                         <label for="review">Review</label>
-                        <textarea id="review" name="review" cols="25" rows="5">
+                        <textarea id="review" name="review">
                         </textarea>
                 </div>
                 <input type="submit" value="submit"/>
             </form>
         </div>
         <div class="feed">
-            <h4>Restuarant Reviews</h4>
-            <div class="reviews">
+            <h3>Restuarant Reviews</h3>
+            <div class="review card">
                 <h4 class="reviewer">Daisy</h4>
+                <div class="card-content">
+                <img class="avatar" src="./images/avatarfemale.jpg"/>
                 <p class="review-text">
                     This cozy restaurant has left the best impressions! 
                     Hospitable hosts, delicious dishes, beautiful presentation, wide wine list and wonderful dessert. 
                     I recommend to everyone! I would like to come back here again and again.
                 </p>
+                </div>
             </div>
-            <div class="reviews">
+            <div class="review card">
                 <h4 class="reviewer">Fanny</h4>
+                <img class="avatar" src="./images/avatarfemale2.jpg"/>
                 <p class="review-text">
                     This place is great! 
                     Atmosphere is chill and cool but the staff is also really friendly. 
@@ -63,8 +70,9 @@
                     and for their prices it’s 100% worth it
                 </p>
             </div>
-            <div class="reviews">
-                <h4 class="reviewer">Prossy</h4>
+            <div class="review card">
+                <h4 class="reviewer">Mark</h4>
+                <img class="avatar" src="./images/avatarmale.jpg"/>
                 <p class="review-text">
                     Excellent food. 
                     Menu is extensive and seasonal to a particularly high standard. 
@@ -73,8 +81,9 @@
                     them out before you book. Highly recommended.
                 </p>
             </div>
-            <div class="reviews">
-                <h4 class="reviewer">Jane Doe</h4>
+            <div class="review card">
+                <h4 class="reviewer">Richard</h4>
+                <img class="avatar" src="./images/avatarmale2.jpg"/>
                 <p class="review-text">
                     Really decent food and at affordable prices, 
                     What a lovely restaurant, highly recommended.
@@ -82,9 +91,35 @@
                     celebrating my birthday with my family and friends.
                 </p>
             </div>
+            <div class="review card">
+                    <h4 class="reviewer">Hansley</h4>
+                    <img class="avatar" src="./images/avatarfemale2.jpg"/>
+                    <p class="review-text">
+                        Reception and all service staff were very helpful and cordial. 
+                        Our beachfront room on the third floor had a balcony and a great view of the ocean, and sunrise- magnificent. 
+                        Food in the tavern for dinner and breakfast was good. 
+                        Especially liked the lowcountry shrimp and grits. 
+                        They surprised my husband with a slice of chocolate cake 
+                        with "Happy Birthday" written on the plate when we casually 
+                        mentioned that it was his birthday!
+                    </p>
+            </div>
+                <div class="review card">
+                    <h4 class="reviewer">Vicent</h4>
+                    <img class="avatar" src="./images/avatarmale2.jpg"/>
+                    <p class="review-text">
+                        The breakfast brunch was great. 
+                        We went at 10:45 and everything was still hot and there was plenty of everything. 
+                        Our server was very friendly and took good care of us. We enjoyed sitting at the pool 
+                        and enjoying cocktails. We also loved walking on the beach.
+                        All the good reviews that I have read about this property are true. 
+                        The friendliness of the staff seems genuine. 
+                        I have never seen such good customer service as I experienced poolside.
+                    </p>
+                </div>
+            </div>
         </div>
     </div>
-    <main></main> <!--holds main content-->
-
+ 
 </body>
 </html>

@@ -3,35 +3,45 @@ body {
     color: purple;
     width: 90%;
     margin:auto;
-    background-color: rgba(2, 243, 195, 0.89);
+    background-color: rgba(36, 238, 197, 0.89);
 }
-img {
+img.banner {
     width:100%;
-    height:60vh;
+    height:500px;
 }
 /* id selector */
 #logo {
-    color: crimson;
+    color: purple;
     text-decoration: none;
-    text-transform: uppercase;
+    display: inline;
+    float: left;
+    margin: 10px;
+    padding: 30px;
 }
 /* class selector */
 .navbar-top{
-    background-color: rgb(243, 65, 169);
+    background-color:rgb(248, 86, 186);
     margin-top: 0px;
+    height: 70px;
 }
 .menu {
     list-style-type: none;
-    height: 50px;
-    display: inline-block;
+    display: block;
+    overflow: hidden;
 }
-.menu>li>.a {
+.menu > li {
+    display: inline;
+    float: right;
+    margin: 10px;
+    padding: 30px;
+}
+.menu > li > a {
     text-decoration: none;
-    margin-top: 0px;
-    margin-bottom: 0px;
+    margin-top:0px;
+    margin-bottom:0px;
     color:purple
 }
-a :hover {
+a:hover {
     color: purple;
     text-transform: uppercase;
 }
@@ -39,18 +49,113 @@ a:active{
     color: rgb(88, 2, 88);
 }
 /* look inside of div with a class of feed for every div inside, look for its child of element height 4px; then apply to style to it */
+
+.review {
+    background-color: rgb(248, 86, 186);
+    border-bottom:2px solid rgb(248, 86, 186);
+    margin: 5px;
+}
+h1 {
+    text-align: center;
+    font-weight: 900;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 80px;
+}
 div.feed>div>h4 {
-    color: rgb(255, 0, 157);
+    color: purple;
+    margin-bottom:0;
+    padding: 10px;
+}
+.feedback-form {
+    width:40%;
+    float: left;
+    padding: 6px;
+}
+.feed {
+    width:58%;
+    height: 300px;
+    float: right;
+    padding: 6px;
+    background: rgb(248, 86, 186);
+    overflow: auto;
 }
 
+.review {
+    border-radius: 80px;
+    height: 170px;
+    overflow: hidden;
+}
+/* .card-content{
+    display: box;
+    margin-bottom:10px;
+    padding:20px;
+
+} */
+
 .review-text {
-    /* color: rgb(74, 83, 107); */
-    /* red, green blue opacity */
     color: rgba(31, 23, 73, 0.548);
-    margin-top:7px;
-    margin-bottom:4px;
+    padding: 10px;
+    margin:9px;
     /* padding: 10px; */
     padding:3px 5px 5px 6px;
-    /* display: none; */
+    display: inline;
     height: 50px;
+    width: 100%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-size: 14px;
+}
+.reviewer {
+    font-style: italic;
+}
+.avatar {
+    height: 80px;
+    width: 10%;
+    float: left;
+    margin: 5px;
+    border-radius: 30px;
+
+}
+.feedback-form {
+    padding: 4px;
+    background: rgb(248, 86, 186);
+    height: 250px;
+    color: purple;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+label, .form-header {
+    font-weight: bold;
+    color: purple;
+}
+.input-element input, textarea {
+    width: 100%;
+    margin-bottom: 4px;
+    border: none;
+    outline: none;
+    padding: 5px;
+    background: none;
+    border-bottom: 3px solid rgb(248, 86, 186);
+    resize:none;
+
+}
+
+input:focus, textarea:focus {
+    border-bottom: 1px solid indigo;
+}
+input[type='submit'] {
+    background: rgba(36, 238, 197, 0.89);
+    border: none;
+    height: 40px;
+    width: 120px;
+    color: purple;
+    text-align: left;
+    font-weight: bolder;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+}
+
+.review:hover {
+    box-shadow: 1px 5px 8px 1px;
 }
