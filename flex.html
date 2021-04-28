@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Working with Flex</title>
+</head>
+<style>
+    body {
+        margin: 0;
+        background-image: radial-gradient(orangered, purple);
+        width: 80%;
+        margin: 0 auto;
+    }
+    h2 {
+        text-align: center;
+        text-transform: uppercase;
+        color: white;
+    }
+    /* flex cointainer styles */
+    .container {
+        padding:20px;
+        margin:0;
+        display:flex;
+    /*    flex-direction: row;
+        flex-wrap: wrap; */
+        flex-flow:row-reverse wrap; /* combines flex direction and flex wrap */
+    /*    justify-content: flex-end; */
+        justify-content:center;
+    /*    align-items:center; */
+        align-items: flex-end;
+        align-content: center;
+    /*    align-items:baseline; */
+    }
+    /*flex item styles */
+    .flex-item {
+        background: #fff;
+        height: 200px;
+        width: 300px;
+        padding: 3px;
+        margin: 9px;
+    /*    overflow: hidden; */
+        order: 3;
+        flex-grow: 1;
+        flex-basis: auto;
+    }
+    /* .first {
+        flex-shrink: 3;
+    } */
+</style>
+<body>
+    <h2>Flex Card System</h2>
+    <div class="container">
+    <div class="flex-item first">
+        <p>1</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt, voluptas beatae? Nam dolore accusantium quae voluptas nulla, adipisci dolor enim hic incidunt fugit nobis, voluptatibus rerum nesciunt odit non! Neque quia modi vitae recusandae?</p>
+    </div>
+    <div class="flex-item">
+        <p>2</p>
+        <p>Molestiae, dolorem voluptatibus fuga corporis labore provident, exercitationem doloremque earum recusandae quas vero illum est, quis corrupti! Officiis veniam earum, perferendis voluptas quas aliquam consectetur aliquid alias voluptates placeat magnam pariatur. Animi, velit minus!</p>
+    </div>
+    <div class="flex-item">
+        <p>3</p>
+        <p>Repudiandae earum pariatur aperiam sed voluptatibus alias, tenetur odio deserunt enim laborum inventore eum, dolorem ut necessitatibus debitis neque illum at quibusdam, harum nisi. Repellendus non, quam laborum sunt consequatur nihil magnam ipsum ea.</p>
+    </div>
+    <div class="flex-item">
+        <p>4</p>
+        <p>Fugit eius in nulla recusandae? Officiis a, maxime dicta error voluptate quasi, consequatur sint animi, alias unde eligendi consequuntur possimus repellat necessitatibus blanditiis accusamus reprehenderit porro officia velit sit! Atque ratione reprehenderit amet aliquid.</p>
+    </div>
+    <div class="flex-item">
+        <p>5</p>
+        <p>Qui soluta id deserunt sed cumque laboriosam iste? Numquam, officia minus quidem dolore eveniet temporibus magni omnis cum neque voluptate. Blanditiis sit alias, quisquam corrupti enim numquam tempore quis commodi? Velit nisi aliquid vitae?</p>
+    </div>
+    <div class="flex-item">
+        <p>6</p>
+        <p>Eos debitis earum perspiciatis cum sequi nihil ipsam eum, illum maiores sit modi magni dolore ipsa molestiae quas eligendi. Debitis blanditiis perspiciatis quos officia dignissimos. Praesentium iusto placeat vitae, dolorem nesciunt quaerat rerum aut.</p>
+    </div>
+    <div class="flex-item">
+        <p>7</p>
+        <p>Pariatur aliquid nostrum tempora itaque a delectus beatae dolorum eaque in quos facilis odio ipsum, perspiciatis expedita impedit velit. Voluptatibus velit cum natus, aut nemo, repellat aliquam quibusdam necessitatibus, fugiat dicta numquam. Id, facere.</p>
+    </div>
+    <div class="flex-item">
+        <p>8</p>
+        <p>Maxime obcaecati tempora mollitia rem cupiditate tempore voluptates officia minus! Id voluptatum nulla, aspernatur excepturi velit ducimus sint eius nemo. Dolorum officiis recusandae quos, fugiat, quod, facere repudiandae facilis asperiores eaque corporis perferendis enim?</p>
+    </div>
+    <div class="flex-item">
+        <p>9</p>
+        <p>Commodi minus vel ducimus praesentium alias reiciendis dicta ipsam. Tempora vel at temporibus fugit aliquam ea, atque porro accusantium repellat voluptatibus error rem assumenda est aspernatur, vero dolores eaque maiores praesentium. Accusamus, ut beatae?</p>
+    </div>
+    <div class="flex-item">
+        <p>10</p>
+        <p>Labore corporis laborum dolorem minima praesentium. Adipisci quaerat repellendus neque minima praesentium modi nihil ducimus suscipit et quis iusto harum officia consequatur, laudantium laboriosam rem sequi dolores reiciendis. Nisi ratione a illum dolor qui!</p>
+    </div>
+    <div class="flex-item">
+        <p>11</p>
+        <p>Doloribus rem minima dicta earum sed consectetur nemo voluptate similique officia voluptatem nihil omnis veniam, doloremque explicabo minus natus molestias laboriosam nam unde vel. Accusamus temporibus veritatis est libero in neque cum officiis quasi.</p>
+    </div>
+    <div class="flex-item">
+        <p>12</p>
+        <p>Molestiae quam, totam quia praesentium saepe impedit omnis voluptatum ex reprehenderit est aut ea amet suscipit corrupti placeat similique veniam nam nihil non nesciunt veritatis consequatur tempora corporis possimus. Cumque ipsam aspernatur in aliquid.</p>
+    </div>
+    </div>
+</body>
