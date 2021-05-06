@@ -25,11 +25,17 @@
             background-color: rgb(211, 101, 174);
             height: 500px;
             color: orange;
+            padding: 20px;
+            margin: 4px;
+            list-style-type: none;
+            
         }
         .content {
             display: flex;
             flex-flow: column wrap;
             margin: 4px;
+            margin-left: 20px;
+            margin-right: 20px;
             justify-content: space-between;
             align-content: space-between;
             border-style: dotted;
@@ -37,12 +43,15 @@
             height: 100px;
             overflow: auto;
             float: inline-start;
+            padding: 20px;
         }  
         a:hover {
             color: black;
         }
         a {
             color: orange;
+            text-decoration: none;
+            font-size: 20px;
         }
         .content:hover {
             box-shadow: 10px 10px 10px rgb(211, 101, 174);
@@ -53,12 +62,15 @@
             font-style: italic;
             font-weight: bolder;
         }
+        .first-item {
+            padding: 15px;
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="main">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            <p class="first-item">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
             Praesentium quam nemo eius voluptates fugiat enim voluptatibus rem, 
             omnis consequuntur a veritatis dolores corporis minus ut? 
             Expedita vel unde incidunt quibusdam iste illum. 
@@ -141,12 +153,12 @@
         </div>
         <div class="sidebar">
              <ul class="navigation">
-                <li class="navigation-item"><a href="">Link</a></li>
-                <li class="navigation-item"><a href="">Link</a></li>
-                <li class="navigation-item"><a href="">Link</a></li>
-                <li class="navigation-item"><a href="">Link</a></li>
-                <li class="navigation-item"><a href="">Link</a></li>
-                <li class="navigation-item"><a href="">Link</a></li>
+                <li class="navigation-item"><a href="">HOME</a></li>
+                <li class="navigation-item"><a href="">ABOUT US</a></li>
+                <li class="navigation-item"><a href="">MENU</a></li>
+                <li class="navigation-item"><a href="">PRODUCTS</a></li>
+                <li class="navigation-item"><a href="">PRICE</a></li>
+                <li class="navigation-item"><a href="">CONTACT US</a></li>
                 </ul>
         </div>
     
