@@ -1,6 +1,6 @@
 // COVID19 TEMPERATURE TEST
 function COVID19TEST(temperaturetest) {
-    var results;
+    let results = temperaturetest;
     if(temperaturetest == 33){
         results = 'temperature is normal';
     }
@@ -15,13 +15,12 @@ function COVID19TEST(temperaturetest) {
     }
     return results;
 }
+console.log(temperaturetest);
 
 //ARRAYS
-var h;
-h = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25];
+let myArray = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25];
+const rewind = 'Armstrong';
+console.log (myArray);
 
-h[9] = 'Armstrong';
-console.log (h[3]);
-
-h.reversed();
-console.log (h);
+Armstrong.reversed();
+console.log (rewind(myArray));
